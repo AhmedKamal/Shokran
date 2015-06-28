@@ -4,11 +4,14 @@ Shokran is a scrapping tool that retrieves all the reviews for any windows phone
 
 # Features
 
-Retrieve All reviews for any windows phone app given its appId and name including 
-* Reviewer Name
-* Review Date
-* User Rating
-* Review Content
+- Retrieve All reviews for any windows phone app given its appId and name including 
+  * Reviewer Name
+  * Review Date
+  * User Rating
+  * Review Content
+  *
+- Covers all the markets of windows phone (nearly) with 81 market avaialble.
+  
 
 
 # Requirements
