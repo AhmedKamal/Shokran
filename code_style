@@ -1,0 +1,17 @@
+Due to pep-0008 https://www.python.org/dev/peps/pep-0008
+
+NAMING CONVENTIONS
+
+1- Function names should be lowercase, with words separated by underscores as necessary
+2- Always use self for the first argument to instance methods.
+3- Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability.
+4- Class names should normally use the CapWords convention.
+5- Exception Names : the class naming convention applies here
+6- Constants are usually defined on a module level and written in all capital letters with underscores separating words.
+
+
+
+COMMENTS
+
+1- Always make a priority of keeping the comments up-to-date when the code changes!
+2- Comments are written in English only
