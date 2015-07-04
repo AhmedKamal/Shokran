@@ -1,7 +1,11 @@
 # Shokran
 
-Shokran is a scrapping tool that retrieves all the reviews for any windows phone application.
+Shokran is a analytics tool that retrieves all the reviews for any windows phone application in different stores and provide some statistics regarding the app state in market.
 
+# Input
+
+You just need to enter a link to the app like the following app link :
+http://windowsphone.com/en-us/store/app/quran-phone/ca503de6-7cef-4ed3-8060-297578729314
 
 # Output
 
@@ -9,48 +13,57 @@ The output of the tool is JSON response that would be like this
 ```javascript
 
 {
-  "AppReviews": {
-    "Country": [
-      {
-        "Name": "Egypt",
-        "Reviews": {
-          "Review": [
-            {
-              "Author": "Ahmed Kamal",
-              "Content": "It is a great app",
-              "Date": "2/2/2015",
-              "Rating": "5"
-            },
-            {
-              "Author": "Mona Ali",
-              "Content": "Nice app",
-              "Date": "5/2/2015",
-              "Rating": "4"
-            }
-          ]
+    "app_key": "ca503de6-7cef-4ed3-8060-297578729314",
+    "app_name": "quran-phone",
+    "store_num": 2,
+    "stores_reviews": [
+        {
+            "average_rating": 5.0,
+            "code": "en-CA",
+            "reviews": [
+                {
+                    "author": "by fayaz",
+                    "content": "Excellent app would be nice when taping the screen it give two translation \n",
+                    "date": "2014-01-19",
+                    "rating": "5"
+                },
+                {
+                    "author": "by pholad",
+                    "content": "Masha Allah \nThis is indeed an excellent app very useful \nMay Allah reward you abundantly.\nonly Tsfsir ibni kathir needs some review \nBecause some words miss typed  and the بسم الله gets attached with the surah.\nverse search if added would be very helpful jazakallah u khair\nجزاك الله خيرا في الدارين ",
+                    "date": "2013-09-27",
+                    "rating": "5"
+                },
+                {
+                    "author": "by Mohened",
+                    "content": "The Application won't open when selecting an Arabic language from sitting and because of this issue I uninstall it and reinstall it and have the same problem,please fix it,I really like and prefer this great application in Android market.",
+                    "date": "2013-09-20",
+                    "rating": "5"
+                }
+            ],
+            "reviews_cnt": 3,
+            "store_name": "English - Canada"
+        },
+        {
+            "average_rating": 4,
+            "code": "ar-SA",
+            "reviews": [
+                {
+                    "author": "بقلم Neji",
+                    "content": "سيء جداً .. ما صار يحمل القراءات الصوتية .. يجلس ساااعة يحمل و بعدين يقول معذرةً حصل خطأ ما !! حق الاندرويد أحسن بكثييير ",
+                    "date": "15/03/36",
+                    "rating": "3"
+                },
+                {
+                    "author": "بقلم محمد",
+                    "content": "جميل جزاكم الله خيراً",
+                    "date": "24/01/36",
+                    "rating": "5"
+                }
+            ],
+            "reviews_cnt": 2,
+            "store_name": "Arabic - Saudi Arabia"
         }
-      },
-      {
-        "Name": "United States",
-        "Reviews": {
-          "Review": [
-            {
-              "Author": "Mai Anwar",
-              "Content": "Silly app",
-              "Date": "5/2/2015",
-              "Rating": "2"
-            },
-            {
-              "Author": "Mohamed Khaled",
-              "Content": "Nice app",
-              "Date": "4/2/2015",
-              "Rating": "5"
-            }
-          ]
-        }
-      }
     ]
-  }
 }
 ```
 # Features
