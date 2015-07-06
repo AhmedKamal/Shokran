@@ -4,6 +4,7 @@ __author__ = 'AhmedKamal'
 from bs4 import BeautifulSoup
 import urllib2
 import json
+import visualize
 from json import JSONEncoder
 
 
@@ -165,6 +166,7 @@ for url in urls:
 #print json data about the app including reviews , average , rating for each store , .. etc
 app = Application(app_name, app_key, app_reviews.__len__(), app_reviews)
 json_resp = json.dumps(app, indent=4, sort_keys=True, cls=MyEncoder, ensure_ascii=False)
+visualize.visualize_store_reviews(app_reviews)
 print json_resp
 
 
