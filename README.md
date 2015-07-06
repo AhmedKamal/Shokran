@@ -75,6 +75,7 @@ The output of the tool is JSON response that would be like this
   * Review Content
   *
 - Covers all the markets of windows phone (nearly) with 81 market avaialble.
+- Provides and visualize some statisitcs about the reviews.
   
 
 
@@ -82,9 +83,13 @@ The output of the tool is JSON response that would be like this
 
 * Install [Python 2.7](https://www.python.org/download/releases/2.7/) 
 * Install [Beautiful Soup Library](http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup) 
+* Install [Plotly for Python](https://plot.ly/python/getting-started/) 
 
-
-Note : you will find pip installed by default with python 2.7 , so you can just install it using the following command 
+Notes : 1- You will find pip installed by default with python 2.7 , so you can just install it using the following command 
 ```python
 pip install beautifulsoup4
+```
+2- Don't forget to get an API Key and to intialize your local machine with it.
+
+
 
